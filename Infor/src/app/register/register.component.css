@@ -1,0 +1,33 @@
+header {
+    background-color:black;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    color:white ;
+}
+.container {
+  
+    border-radius: 5px;
+    border: 2px solid teal;
+     text-align:center;
+     margin-left: 25%;
+     margin-top: 1%;
+     width: 45%;
+     margin-bottom: 1%;
+
+  }
+  .ui-inputgroup
+  {
+      margin-left:90%;
+      margin-top:1%;
+      width:100%;
+  }
+  h2
+  {
+      color:green;
+  }
+  .btn
+  {
+    padding: 5px;
+   margin:1px;
+  }

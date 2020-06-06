@@ -1,0 +1,58 @@
+<link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.1/jquery-ui-timepicker-addon.min.js"></script>
+
+
+   
+    <header>  
+      <h1>WELCOME TO MY APPLICATION</h1>
+    </header>
+    <div class="container">
+    <h2>REGISTRATION FORM</h2>
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="fa fa-user" aria-hidden="true" ></i></span>
+            <input type="text"   pInputText placeholder="UserName"  [(ngModel)]="user.username" required >         
+        </div>
+    </div>
+</div>
+
+
+<div class="ui-g ui-fluid" >
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+            <p-calendar [(ngModel)]="value" [showIcon]="true" placeholder="Date Of Birth" [(ngModel)]="user.dateOfBirth" ></p-calendar>        
+        </div>
+    </div>
+</div>
+
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="fa fa-inbox" aria-hidden="true"></i></span>
+            <input type="text" pInputText placeholder="Email" [(ngModel)]="user.email">         
+        </div>
+    </div>
+</div>
+
+
+
+<p-button class="btn"  label="Register" (onClick)="register();"></p-button>
+<p-button class="btn"  label="Cancel"   (onClick)="cancel()"></p-button>
+
+</div>
+
+    
+  
+    
+ 
+
+
+
+
